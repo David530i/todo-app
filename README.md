@@ -1,16 +1,88 @@
-# React + Vite
+# To-Do List Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
+This project is a React-based To-Do list web application that allows users to add, delete, mark tasks as completed, and filter them by status. 
+The application uses the browser's `localStorage`, so tasks remain saved even after refreshing the page.
 
-Currently, two official plugins are available:
+## Main Features
+- add new tasks
+- delete tasks
+- mark tasks as completed
+- filter tasks by status:
+  - all
+  - active
+  - completed
+- statistics display:
+  - total tasks
+  - active tasks
+  - completed tasks
+- save tasks in `localStorage`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
+- React
+- JavaScript
+- Vite
+- HTML
+- CSS
+- localStorage
+- Node.js / npm
 
-## React Compiler
+## Project Structure
+```text
+src/
+  components/
+    FilterButtons.jsx
+    TaskForm.jsx
+    TaskItem.jsx
+    TaskList.jsx
+  App.jsx
+  App.css
+  index.css
+  main.jsx
+  ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation and Running the Project
+1. Clone or download the project
+If the project is not yet on your computer, first clone it or copy the project folder.
 
-## Expanding the ESLint configuration
+2. Install dependencies
+Run the following command inside the project folder:
+```
+npm install
+```
+3. Start the development server
+```
+npm run dev
+```
+Then open the ``` localhost ``` address shown in the terminal in your browser.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to Use
+1. Type a new task into the input field.
+2. Click the Add button.
+3. The task will appear in the list.
+4. Use the checkbox to mark it as completed.
+5. Use the Delete button to remove it.
+6. Use the filter buttons to switch between all, active, and completed tasks.
+
+## Application Logic
+The application is built with React components. State management is handled with ```useState```, while ```useEffect``` ensures that the task list is automatically saved to the browser's ```localStorage``` ecery time it changes.
+
+## Purpose
+
+The purpose of the project was to create a simple but functional web-based task management application that demonstrates:
+
+component-based development
+state management
+event handling
+client-side data storage
+
+## Possible Future Improvements
+task editing
+due date support
+categories or priority handling
+search functionality
+backend and database integration
+user authentication
+
+## Created By
+Sándor Dávid - H9PNXH
